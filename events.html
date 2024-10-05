@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- inline events -->
+    <button onclick="alert('hii')">click me</button>
+    <button ondblclick="alert('hii')">click me</button>
+    <button onmouseover="alert('hii')">click me</button>
+    <button id="btn">click me</button>
+    <button id="eventListerner">click me</button>
+
+    
+</body>
+<script>
+    // DOM Event handler
+    document.getElementById("btn").onclick=()=>{
+        alert("other way");
+        let Innerhtml="you clicked, didn't you?";
+        document.getElementById("btn").innerText=Innerhtml;
+        console.log(Innerhtml);
+    }
+    // event listener
+    document.getElementById("eventListerner").addEventListener('click',()=>{
+        alert("this is event handler");
+    })
+</script>
+</html>

@@ -1,0 +1,30 @@
+body{
+    background-image: linear-gradient(to right,#123456,#654321);
+}
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-top: 10%;
+}
+#btnDiv{
+    display: flex;
+    justify-content: center;
+}
+#btn1{
+    color: white;
+    background: blue;
+}
+#btn2{
+    color: white;
+    background: green;
+}
+#copy{
+    width: 100px;
+    margin: auto;
+    color: white;
+    background: red;
+}
