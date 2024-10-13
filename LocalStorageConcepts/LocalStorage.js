@@ -3,7 +3,7 @@ let SetData = document.getElementById("AddData");
 let Form = document.getElementById("form");
 let setDataInList = document.getElementById("data");
 let data = {};
-let counter = 0;
+let DeleteDataAll=document.getElementById('DeleteDataAll');
 const GetDataInLocalHost = () => {
   return localStorage.getItem("ToDoList");
 };
@@ -67,12 +67,20 @@ const DeleteDataInTable = (e) => {
   DataWhenPageLoadsFirst();
 };
 
+const clearAll=()=>{
+    let counter=0;
+    alert(" Your will no longer be able to access your data");
+    counter++;
+    console.log(counter);
+    localStorage.clear();
+}
+
 (() => {
   GetDataInLocalHost();
   console.log(localStorageData);
   DataWhenPageLoadsFirst();
 })();
 
+DeleteDataAll.addEventListener("click",clearAll)
 Form.addEventListener("change", formChange);
 SetData.addEventListener("click", setData);
-//GetItem.addEventListener("click", getItem);
