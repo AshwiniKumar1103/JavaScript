@@ -41,6 +41,7 @@ const stopWatchClearTime=()=>{
     }
 }
 
+
 document.getElementById('clearTime').addEventListener('click',stopWatchClearTime);
 document.getElementById('getTime').addEventListener('click',stopWatchGetTime);
 document.getElementById('reset').addEventListener('click',stopWatchReset);
